@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "worldresetmod",
+  "version": "${version}",
+  "name": "World Reset Mod",
+  "description": "Deletes the world folder in the working directory on initialization to reset for coop speedruns.",
+  "authors": [
+    "DuncanRuns"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/worldresetmod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.duncanruns.worldresetmod.WorldResetMod"
+    ],
+    "client": [],
+    "server": []
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.10.7"
+  }
+}
