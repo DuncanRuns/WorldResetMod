@@ -21,7 +21,12 @@ public class WorldResetMod implements ModInitializer {
     @Override
     public void onInitialize() {
         log(Level.INFO, "Initializing");
-        deleteWorld(getWorld());
+        File worldResetFile = new File("disableWorldReset");
+        if(!worldResetFile.exists()) {
+            deleteWorld(getWorld());
+        } else {
+            log(Level.INFO,"Resets are currently disabled.");
+        }
     }
 
     // Gets the world specified by level-name in the current directory's server.properties
